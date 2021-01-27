@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/a3d6717ee9.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Hello!</title>
+  </head>
+  <header>
+    <!--barra de navegacion-->
+    <nav>
+      <i class="fas fa-home"></i><a href="index.html">inicio</a>
+
+      <i class="fas fa-basketball-ball"></i><a href="opc.html">Sugerir Actividad</a>
+
+      <button class="nav" ><i  onclick="colorfondo()" class="fas fa-sun"></i>
+       
+    </button>
+      <button class="nav" ><i  onclick="colorfondoBlanco()" class="fas fa-undo-alt"></i>
+       
+    </button>
+      
+    </nav>
+  </header>
+  <body id ="elementChange">
+<div class="formulario">
+  <div>
+   <i class="fas fa-basketball-ball"></i><h2>
+      Suggest an Activity
+    </h2>
+  <form action="/action_page.php">
+    
+  <label for="email">Email (we won´t spam you)</label><br>
+  <input type="text" id="email" name="email" value="enter your email address"><br>
+  <label for="title">Title: </label><br>
+  <input type="text" id="title" name="title" value="enter the title of the acrivity"><br><br>
+  <label for="description" >Description: </label><br>
+  <textarea name="description" rows="10" cols="40">The cat was playing in the garden.</textarea>
+    <br>
+  <input type="submit">
+</form> 
+    </div>
+  </div>
+
+
+</body>
+</html>

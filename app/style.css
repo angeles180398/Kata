@@ -1,0 +1,53 @@
+/* CSS files add styling rules to your content */
+p{
+  
+    text-align:center;
+   padding: 150px ;
+  font-size:20px;
+  font-family: Papyrus, Helvetica, sans-serif;
+}
+.nav{
+   text-align:right;
+  width: 30px;
+  height: 30px;
+   border-radius: 50%;
+  
+}
+nav{
+  text-align:center;
+}
+
+.flex-container {
+    display:column;
+    background-color: white;
+  }
+  
+  .flex-container > div {
+    background-color:#f1f1f1;
+    margin:10px;
+    font-size:30px;
+  }
+
+
+.formulario{
+    text-align:center;
+    background-color: #D6EAF8 ;
+    margin:10px;
+    font-size:20px;
+  font-family: Papyrus, Helvetica, sans-serif;
+  }
+  
+  .button {
+    background-color: white;
+    color:black;
+    display:block;
+    width: 100%;
+    border: .1px, solid black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor:pointer;
+    text-align: center;
+  }
+form{
+  text-aling:center;
+}
