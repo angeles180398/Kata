@@ -1,10 +1,14 @@
-const express = require('express')
-const path = require('path')
-const PORT = process.env.PORT || 5000
+const http = require('http');
 
-express()
-  .use(express.static(path.join(dirname, 'public')))
-  .set('views', path.join(dirname, 'views'))
-  .set('view engine', 'ejs')
-  .get('/', (req, res) => res.render('index'))
-  .listen(PORT, () => console.log(`Listening on ${ PORT }`));
+const hostname = '0.0.0.0';
+const port = process.env.PORT || 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello World\n');
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
